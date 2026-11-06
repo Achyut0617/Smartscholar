@@ -367,7 +367,7 @@ from pydantic import BaseModel
 load_dotenv()
 
 # Configure Gemini API
-genai.configure(api_key=os.getenv("AIzaSyCe5jcylIp8qMjjFvdCVpFQzHng32hCwpE"), transport="rest")
+genai.configure(api_key=os.getenv(""), transport="rest")
 
 # Define supported query intents
 QueryIntent = Literal["factual", "explanatory", "technical", "conceptual", "general"]
