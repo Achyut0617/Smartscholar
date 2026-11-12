@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Virtual environments and secrets
+.venv/
+venv/
+.env
+
+# Local models and vector database (large, machine-specific)
+local/
+qdrant_vdb/
+
+# Runtime logs and state from folder_monitor.py
+file_states.json
+folder_actions.log
+
+# Decide whether to track sessions.db: it contains personal chat history.
+# sessions.db
