@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartscholar"
+version = "0.1.0"
+description = "Document-grounded RAG study assistant with local Qdrant, BGE embeddings and Ollama."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "PyMuPDF",
+    "python-docx",
+    "langchain-text-splitters",
+    "tiktoken",
+    "sentence-transformers",
+    "numpy",
+    "qdrant-client",
+    "torch",
+    "transformers",
+    "scikit-learn",
+    "joblib",
+    "pydantic",
+    "ollama",
+    "customtkinter",
+    "watchdog",
+]
+
+[project.optional-dependencies]
+training = ["pandas"]
+gemini = ["google-generativeai", "python-dotenv"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit"]
+pythonpath = ["src"]
