@@ -1,2 +1,0 @@
-from query_processing.query_filetags_extractor import FileNameExtractor
-from query_processing.query_classifier import QueryClassifier
