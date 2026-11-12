@@ -1,0 +1,27 @@
+# Runtime dependencies (unpinned; versions were not verified in this restructuring).
+# Equivalent to the [project] dependencies in pyproject.toml.
+PyMuPDF
+python-docx
+langchain-text-splitters
+tiktoken
+sentence-transformers
+numpy
+qdrant-client
+torch
+transformers
+scikit-learn
+joblib
+pydantic
+ollama
+customtkinter
+watchdog
+
+# Training script only
+pandas
+
+# Optional Gemini generator (not active)
+google-generativeai
+python-dotenv
+
+# Tests
+pytest
